@@ -23,7 +23,7 @@ function MemoHook() {
   //----------------------------------------------------- 
 
   // now that we are using the useMemo hook the slowFunction should still take time to calculate but the theme now instantly changes as the function is memoized so as long as the dependecy doesnt change then it wont run and slow down the app
-  // essentailly the code now only runs when it needs to and not when it doesnt have to
+  // essentially the code now only runs when it needs to and not when it doesnt have to
 
   return (
     <div>
