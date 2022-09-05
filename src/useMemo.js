@@ -1,7 +1,6 @@
 import React, { useState, useMemo} from 'react'
 
 function MemoHook() {
-  // everytime the state changes the whole component is re-rendered which means that it runs the slowFunction everytime, this slows down the application by some time which useMemo could fix
   const [ number, setNumber ] = useState(0)
   const [ dark, setDark ] = useState(false);
   const doubleNumber = useMemo(() => {
