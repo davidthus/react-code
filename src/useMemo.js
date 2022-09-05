@@ -13,7 +13,7 @@ function MemoHook() {
     backgroundColor: dark ? 'black' : 'white',
     color: dark ? 'white' : 'black'
   }
-  // now everytime dark gets updated, the object gets updated to but stays as the same object in memory
+  // the reference to this object changes only when the dependency changes instead of every render
 }, [dark])
 
   // pass in dark since that is the only variable that this object depends on
